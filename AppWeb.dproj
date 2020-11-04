@@ -156,7 +156,7 @@
             <DesignClass>TUniFrame</DesignClass>
         </DCCReference>
         <DCCReference Include="uPedidos.pas">
-            <Form>umfrmPedidos</Form>
+            <Form>frmPedidos</Form>
             <DesignClass>TUnimForm</DesignClass>
         </DCCReference>
         <DCCReference Include="units\ButtonsStandardButtons.pas">
@@ -552,8 +552,8 @@
             <FormType>dfm</FormType>
             <DesignClass>TUnimLoginForm</DesignClass>
         </DCCReference>
-        <DCCReference Include="Unit3.pas">
-            <Form>UnimForm3</Form>
+        <DCCReference Include="uItens.pas">
+            <Form>frmItens</Form>
             <FormType>dfm</FormType>
             <DesignClass>TUnimForm</DesignClass>
         </DCCReference>

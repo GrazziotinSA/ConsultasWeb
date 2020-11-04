@@ -1,7 +1,7 @@
 object MainmForm: TMainmForm
   Left = 0
   Top = 0
-  ClientHeight = 968
+  ClientHeight = 1015
   ClientWidth = 1937
   Caption = 'Gerenciador Web'
   OnShow = UnimFormShow
@@ -33,11 +33,41 @@ object MainmForm: TMainmForm
   ScrollPosition = 0
   ScrollHeight = 0
   PlatformData = {}
+  object NavList: TUnimNestedList
+    Left = 0
+    Top = 0
+    Width = 225
+    Height = 909
+    Cursor = crHandPoint
+    Hint = ''
+    Align = alLeft
+    Items.NodeData = {
+      0305000000460000000000000000000000FFFFFFFFFFFFFFFF00000000000000
+      0000000000011443006F006E006600690072006D006100E700E3006F00200064
+      00650020004E006F00740061007300520000000000000000000000FFFFFFFFFF
+      FFFFFF000000000000000000000000011A43006F006E00660065007200EA006E
+      0063006900610020006400650020004D00650072006300610064006F00720069
+      0061007300580000000000000000000000FFFFFFFFFFFFFFFF00000000000000
+      0000000000011D520065006C0061007400F300720069006F00200043006F006E
+      0074006100670065006D00200049006E00760065006E007400E100720069006F
+      00440000000000000000000000FFFFFFFFFFFFFFFF0000000000000000000000
+      00011343006F006E00730075006C007400610020006400650020005000650064
+      00690064006F0073001E0000000000000000000000FFFFFFFFFFFFFFFF000000
+      0000000000000000000100}
+    Items.FontData = {
+      01050000001D000000000000000600000001080000FFF5FFFFFF000000000001
+      5461686F6D61FFFFFFFF00000000FFFFFFFF00000000FFFFFFFF00000000FFFF
+      FFFF00000000}
+    Title = 'Menu'
+    ScreenMask.Enabled = True
+    OnBackClick = NavListBackClick
+    OnLeafClick = NavListLeafClick
+  end
   object UnimContainerPanel2: TUnimContainerPanel
     Left = 225
     Top = 0
     Width = 1712
-    Height = 862
+    Height = 909
     Hint = ''
     Align = alClient
     Color = clWhite
@@ -73,7 +103,7 @@ object MainmForm: TMainmForm
       Left = 0
       Top = 43
       Width = 1712
-      Height = 819
+      Height = 866
       Hint = ''
       ActivePage = UnimTabInventarios
       Align = alClient
@@ -82,12 +112,12 @@ object MainmForm: TMainmForm
         Left = 4
         Top = 51
         Width = 1704
-        Height = 764
+        Height = 811
         Hint = ''
         Caption = 'Tab1'
         DesignSize = (
           1704
-          764)
+          811)
         object UnimContainerPanel4: TUnimContainerPanel
           Left = 0
           Top = 0
@@ -211,7 +241,7 @@ object MainmForm: TMainmForm
         end
         object UnimContainerPanel7: TUnimContainerPanel
           Left = 0
-          Top = 582
+          Top = 629
           Width = 1704
           Height = 182
           Hint = ''
@@ -221,7 +251,7 @@ object MainmForm: TMainmForm
           Left = 0
           Top = 182
           Width = 1704
-          Height = 400
+          Height = 447
           Hint = ''
           Align = alClient
           ParentAlignmentControl = False
@@ -231,7 +261,7 @@ object MainmForm: TMainmForm
         end
         object UnimMemo1: TUnimMemo
           Left = 11
-          Top = 387
+          Top = 418
           Width = 294
           Height = 235
           Hint = ''
@@ -1236,14 +1266,14 @@ object MainmForm: TMainmForm
         Left = 4
         Top = 51
         Width = 1704
-        Height = 764
+        Height = 811
         Hint = ''
         Caption = 'Tab2'
         object UnimPanel2: TUnimPanel
           Left = 0
           Top = 43
           Width = 1704
-          Height = 721
+          Height = 768
           Hint = ''
           Align = alClient
           Color = clWhite
@@ -1301,7 +1331,7 @@ object MainmForm: TMainmForm
             Left = 0
             Top = 57
             Width = 1704
-            Height = 664
+            Height = 711
             Hint = ''
             Align = alClient
             TabOrder = 2
@@ -1313,7 +1343,7 @@ object MainmForm: TMainmForm
             Left = 0
             Top = 57
             Width = 1704
-            Height = 664
+            Height = 711
             Hint = ''
             Align = alClient
           end
@@ -1526,7 +1556,7 @@ object MainmForm: TMainmForm
         Left = 4
         Top = 51
         Width = 1704
-        Height = 764
+        Height = 811
         Hint = ''
         Caption = 'Tab3'
         object UnimContainerPanel10: TUnimContainerPanel
@@ -1561,7 +1591,7 @@ object MainmForm: TMainmForm
           Left = 0
           Top = 43
           Width = 1704
-          Height = 721
+          Height = 768
           Hint = ''
           Align = alClient
           Color = clWhite
@@ -1806,7 +1836,7 @@ object MainmForm: TMainmForm
             Left = 0
             Top = 65
             Width = 1704
-            Height = 656
+            Height = 703
             Hint = ''
             Align = alClient
           end
@@ -1824,7 +1854,7 @@ object MainmForm: TMainmForm
         Left = 4
         Top = 51
         Width = 1704
-        Height = 764
+        Height = 811
         Hint = ''
         Caption = 'Tab3'
         object UnimContainerPanel20: TUnimContainerPanel
@@ -1859,7 +1889,7 @@ object MainmForm: TMainmForm
           Left = 0
           Top = 43
           Width = 1704
-          Height = 721
+          Height = 768
           Hint = ''
           Align = alClient
           Color = clWhite
@@ -2043,7 +2073,7 @@ object MainmForm: TMainmForm
             Left = 0
             Top = 8
             Width = 1704
-            Height = 713
+            Height = 760
             Hint = ''
             Align = alClient
           end
@@ -2059,39 +2089,9 @@ object MainmForm: TMainmForm
       end
     end
   end
-  object NavList: TUnimNestedList
-    Left = 0
-    Top = 0
-    Width = 225
-    Height = 862
-    Cursor = crHandPoint
-    Hint = ''
-    Align = alLeft
-    Items.NodeData = {
-      0305000000460000000000000000000000FFFFFFFFFFFFFFFF00000000000000
-      0000000000011443006F006E006600690072006D006100E700E3006F00200064
-      00650020004E006F00740061007300520000000000000000000000FFFFFFFFFF
-      FFFFFF000000000000000000000000011A43006F006E00660065007200EA006E
-      0063006900610020006400650020004D00650072006300610064006F00720069
-      0061007300580000000000000000000000FFFFFFFFFFFFFFFF00000000000000
-      0000000000011D520065006C0061007400F300720069006F00200043006F006E
-      0074006100670065006D00200049006E00760065006E007400E100720069006F
-      00440000000000000000000000FFFFFFFFFFFFFFFF0000000000000000000000
-      00011343006F006E00730075006C007400610020006400650020005000650064
-      00690064006F0073001E0000000000000000000000FFFFFFFFFFFFFFFF000000
-      0000000000000000000100}
-    Items.FontData = {
-      01050000001D000000000000000600000001080000FFF5FFFFFF000000000001
-      5461686F6D61FFFFFFFF00000000FFFFFFFF00000000FFFFFFFF00000000FFFF
-      FFFF00000000}
-    Title = 'Menu'
-    ScreenMask.Enabled = True
-    OnBackClick = NavListBackClick
-    OnLeafClick = NavListLeafClick
-  end
   object UnimHTMLFrame2: TUnimHTMLFrame
     Left = 0
-    Top = 862
+    Top = 909
     Width = 1937
     Height = 36
     Hint = ''
@@ -2126,7 +2126,7 @@ object MainmForm: TMainmForm
   end
   object UnimToolBar1: TUnimToolBar
     Left = 0
-    Top = 898
+    Top = 945
     Width = 1937
     Height = 70
     Hint = ''
@@ -2197,7 +2197,7 @@ object MainmForm: TMainmForm
     Left = 184
     Top = 240
     Bitmap = {
-      494C01010B00E800FC0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010B00E800000110001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000008000FF0080
       00FF008000FF008000FF008000FF000000000000000000000000008000FF0080

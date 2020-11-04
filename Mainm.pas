@@ -3121,7 +3121,7 @@ var
   F: TUnimForm;
   FFrame: TUniFrame;
 begin
-  F := umfrmPedidos;
+  F := frmPedidos;
   FFrame := AClass.Create(F);
   FFrame.Align := alClient;
   FFrame.Parent := F;
@@ -3291,7 +3291,7 @@ begin
 
   if Nd.Text = 'Consulta de Pedidos' then
   begin
-    umfrmPedidos.Show;
+    frmPedidos.Show;
   end;
 
 

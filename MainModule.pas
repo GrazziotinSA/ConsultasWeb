@@ -56,9 +56,9 @@ type
     dtsRelInventario: TDataSource;
     fdQueryRelAuxiliar: TFDQuery;
     mtblPedidos: TFDMemTable;
-    mtblItems: TFDMemTable;
+    mtblItens: TFDMemTable;
     dsPedidos: TDataSource;
-    dsItems: TDataSource;
+    dsItens: TDataSource;
     dsLojas: TDataSource;
     mtblLojas: TFDMemTable;
     procedure UniGUIMainModuleCreate(Sender: TObject);

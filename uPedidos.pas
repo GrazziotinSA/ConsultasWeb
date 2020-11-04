@@ -8,10 +8,10 @@ uses
   uniGUIClasses, uniGUImClasses, uniGUIForm, uniGUImForm, uniGUImJSForm,
   uniBasicGrid, uniDBGrid, unimDBListGrid, uniGUIBaseClasses, uniEdit, unimEdit,
   uniDateTimePicker, unimDatePicker, uniButton, uniBitBtn, unimBitBtn, uniLabel,
-  unimLabel, unimPanel, uniImageList, uniToolBar, unimToolbar;
+  unimLabel, unimPanel, uniImageList, uniToolBar, unimToolbar, unimButton;
 
 type
-  TumfrmPedidos = class(TUnimForm)
+  TfrmPedidos = class(TUnimForm)
     UnimDBListGrid1: TUnimDBListGrid;
     UnimPanel1: TUnimPanel;
     UnimLabel1: TUnimLabel;
@@ -22,6 +22,7 @@ type
     UnimEdit1: TUnimEdit;
     UnimDatePicker2: TUnimDatePicker;
     UnimDatePicker1: TUnimDatePicker;
+    btnBuscar: TUnimButton;
     procedure UnimDBListGrid1Click(Sender: TObject);
   private
     { Private declarations }
@@ -29,25 +30,25 @@ type
     { Public declarations }
   end;
 
-function umfrmPedidos: TumfrmPedidos;
+function frmPedidos: TfrmPedidos;
 
 implementation
 
 {$R *.dfm}
 
 uses
-  MainModule, uniGUIApplication, Unit3;
+  MainModule, uniGUIApplication, uItens;
 
-function umfrmPedidos: TumfrmPedidos;
+function frmPedidos: TfrmPedidos;
 begin
-  Result := TumfrmPedidos(UniMainModule.GetFormInstance(TumfrmPedidos));
+  Result := TfrmPedidos(UniMainModule.GetFormInstance(TfrmPedidos));
 end;
 
-procedure TumfrmPedidos.UnimDBListGrid1Click(Sender: TObject);
+procedure TfrmPedidos.UnimDBListGrid1Click(Sender: TObject);
 begin
 
   UniMainModule.mtblPedidos.SaveToFile('db');
-  UnimForm3.ShowModal();
+  frmItens.ShowModal();
 
 end;
 

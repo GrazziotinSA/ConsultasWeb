@@ -31,9 +31,6 @@ Coordinates=162,499,194,51
 [UniMainModule.QueryGeral]
 Coordinates=366,499,149,51
 
-[UniMainModule.mtblItems]
-Coordinates=689,560,141,51
-
 [UniMainModule.QueryGeral4]
 Coordinates=380,420,155,51
 
@@ -100,9 +97,6 @@ Coordinates=785,224,145,33
 [UniMainModule.dsLojas]
 Coordinates=1083,71,132,33
 
-[UniMainModule.dsItems]
-Coordinates=1083,141,132,33
-
 [UniMainModule.mtblLojas]
 Coordinates=1083,1,141,51
 
@@ -111,4 +105,10 @@ Coordinates=785,224,100,33
 
 []
 Coordinates=675,224,56,33
+
+[UniMainModule.mtblItens]
+Coordinates=689,560,141,51
+
+[UniMainModule.dsItens]
+Coordinates=1083,141,132,33
 

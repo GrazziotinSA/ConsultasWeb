@@ -1,9 +1,9 @@
-object umfrmPedidos: TumfrmPedidos
+object frmPedidos: TfrmPedidos
   Left = 0
   Top = 0
   ClientHeight = 572
-  ClientWidth = 953
-  Caption = ''
+  ClientWidth = 1171
+  Caption = 'CONTROLE DE ESTOQUE DE PEDIDOS'
   ScreenMask.Message = 'Loading...'
   ScreenMask.Target = Owner
   CloseButton.Text = 'Back'
@@ -20,13 +20,13 @@ object umfrmPedidos: TumfrmPedidos
   object UnimPanel1: TUnimPanel
     Left = 0
     Top = 0
-    Width = 953
+    Width = 1171
     Height = 96
     Hint = ''
     Align = alTop
     object UnimLabel1: TUnimLabel
-      Left = 8
-      Top = 12
+      Left = 10
+      Top = 13
       Width = 225
       Height = 23
       Hint = ''
@@ -35,7 +35,7 @@ object umfrmPedidos: TumfrmPedidos
       ParentFont = False
     end
     object UnimLabel2: TUnimLabel
-      Left = 247
+      Left = 248
       Top = 13
       Width = 225
       Height = 23
@@ -45,7 +45,7 @@ object umfrmPedidos: TumfrmPedidos
       ParentFont = False
     end
     object UnimLabel3: TUnimLabel
-      Left = 485
+      Left = 487
       Top = 13
       Width = 225
       Height = 23
@@ -55,7 +55,7 @@ object umfrmPedidos: TumfrmPedidos
       ParentFont = False
     end
     object UnimLabel4: TUnimLabel
-      Left = 724
+      Left = 722
       Top = 13
       Width = 225
       Height = 23
@@ -102,11 +102,19 @@ object umfrmPedidos: TumfrmPedidos
       DateFormat = 'dd/MM/yyyy'
       Date = 44132.000000000000000000
     end
+    object btnBuscar: TUnimButton
+      Left = 951
+      Top = 42
+      Width = 225
+      Height = 33
+      Hint = ''
+      Caption = '&Buscar'
+    end
   end
   object UnimDBListGrid1: TUnimDBListGrid
     Left = 0
     Top = 96
-    Width = 953
+    Width = 1171
     Height = 476
     Hint = ''
     Align = alClient

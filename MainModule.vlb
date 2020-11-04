@@ -151,18 +151,18 @@ Coordinates=697,305,76,51
 [mtblPedidos]
 Coordinates=379,305,121,267
 
-[mtblItems]
-Coordinates=308,224,62,51
-
 [dsPedidos]
 Coordinates=538,134,66,33
-
-[dsItems]
-Coordinates=538,134,53,33
 
 [mtblLojas]
 Coordinates=538,134,62,51
 
 [dsLojas]
+Coordinates=538,134,53,33
+
+[mtblItens]
+Coordinates=308,224,62,51
+
+[dsItens]
 Coordinates=538,134,53,33
 
