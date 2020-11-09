@@ -144,7 +144,10 @@ object frmItens: TfrmItens
       Hint = ''
       Align = alClient
       DataSource = UniMainModule.dsItens
+      ReadOnly = True
       Summary.Enabled = True
+      OnClick = dbgrdItensClick
+      OnDblClick = dbgrdItensDblClick
       OnFieldImage = dbgrdItensFieldImage
       OnColumnSummary = dbgrdItensColumnSummary
       OnColumnSummaryResult = dbgrdItensColumnSummaryResult
@@ -187,18 +190,27 @@ object frmItens: TfrmItens
           Title.Caption = 'QTD.'
           FieldName = 'QTD_ITEM'
           Width = 100
+          ShowSummary = True
         end
         item
           Title.Alignment = taCenter
           Title.Caption = 'VALOR'
           FieldName = 'VLR_ITEM'
           Width = 150
+          ShowSummary = True
         end
         item
           Title.Alignment = taCenter
-          Title.Caption = 'LOJA ESTOQUE'
-          FieldName = 'LOJA_ESTOQUE'
+          Title.Caption = 'CD ESTOQUE'
+          FieldName = 'CD_ESTOQUE'
           Width = 150
+        end
+        item
+          Alignment = taCenter
+          Title.Alignment = taCenter
+          Title.Caption = 'SITUA'#199#195'O'
+          FieldName = 'STATUS_ITEM'
+          Width = 200
         end
         item
           ImageOptions.Visible = True
@@ -210,6 +222,8 @@ object frmItens: TfrmItens
           Width = 150
         end
         item
+          ImageOptions.Visible = True
+          ImageOptions.Height = 16
           Alignment = taCenter
           Title.Alignment = taCenter
           Title.Caption = 'HISTORICO'

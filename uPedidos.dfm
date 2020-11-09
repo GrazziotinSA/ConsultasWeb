@@ -1,14 +1,12 @@
 object frmPedidos: TfrmPedidos
   Left = 0
   Top = 0
-  ClientHeight = 572
+  ClientHeight = 497
   ClientWidth = 1171
   Caption = 'CONTROLE DE ESTOQUE DE PEDIDOS'
   ScreenMask.Message = 'Loading...'
   ScreenMask.Target = Owner
-  CloseButton.Text = 'Back'
   CloseButton.UI = 'back'
-  CloseButton.ShowIcon = False
   TitleDocked = True
   TitleButtons = <>
   PixelsPerInch = 96
@@ -115,43 +113,49 @@ object frmPedidos: TfrmPedidos
     Left = 0
     Top = 96
     Width = 1171
-    Height = 476
+    Height = 401
     Hint = ''
     Align = alClient
     DataSource = UniMainModule.dsPedidos
     OnClick = UnimDBListGrid1Click
     Columns = <
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'UNIDADE'
         FieldName = 'CD_UNIDADE'
         Width = 70
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'GRUPO'
         FieldName = 'CD_GRUPO'
         Width = 70
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'PEDIDO'
         FieldName = 'CD_PEDIDO'
         Width = 70
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'VENDA'
         FieldName = 'DT_PEDIDO'
         Width = 100
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'CLIENTE'
         FieldName = 'CD_CLIENTE'
         Width = 70
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'NOME CLIENTE'
         FieldName = 'CLIENTE'
@@ -164,30 +168,35 @@ object frmPedidos: TfrmPedidos
         Width = 70
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'STATUS PEDIDO'
         FieldName = 'FL_SITUACAO_PEDIDO'
         Width = 150
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'DATA NF'
         FieldName = 'DT_NOTA_FISCAL'
         Width = 100
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'NR NF'
         FieldName = 'NR_NOTA_FISCAL'
         Width = 70
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'MOVIMENTO'
         FieldName = 'DT_MOVIMENTO'
         Width = 100
       end
       item
+        Alignment = taCenter
         Title.Alignment = taCenter
         Title.Caption = 'STATUS CONTROLE'
         FieldName = 'FL_STATUS'

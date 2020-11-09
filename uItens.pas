@@ -33,6 +33,8 @@ type
     procedure dbgrdItensColumnSummary(Column: TunimDBGridColumn);
     procedure dbgrdItensColumnSummaryResult(Column: TunimDBGridColumn;
       var Result: string);
+    procedure dbgrdItensClick(Sender: TObject);
+    procedure dbgrdItensDblClick(Sender: TObject);
 //    procedure UnimEdit1ChangeValue(Sender: TObject);
   private
     { Private declarations }
@@ -42,12 +44,18 @@ type
 
 function frmItens: TfrmItens;
 
+
+const
+  ST_ITEM_01 = 'Aguardando Separação CD';
+  ST_ITEM_02 = 'Aguardando Separação Loja';
+
+
 implementation
 
 {$R *.dfm}
 
 uses
-  MainModule, uniGUIApplication, Mainm;
+  MainModule, uniGUIApplication, Mainm, uLojas, uHistorico;
 
 function frmItens: TfrmItens;
 begin
@@ -62,6 +70,17 @@ begin
    //  UniSession.AddJS('document.getElementById("demo2").play()');
 end;
  }
+procedure TfrmItens.dbgrdItensClick(Sender: TObject);
+begin
+
+//  UniMainModule.mtblItens.SaveToFile('db-itens');
+
+  if UniMainModule.mtblItens.FieldByName('STATUS_ITEM').AsString = ST_ITEM_01 then
+    frmLojas.ShowModal();
+
+
+end;
+
 procedure TfrmItens.dbgrdItensColumnSummary(Column: TunimDBGridColumn);
 begin
 
@@ -94,14 +113,21 @@ begin
 
   if SameText(Column.FieldName, 'QTD_ITEM') then begin
     I      := Column.AuxValue;
-    Result := Format('Itens Totais: %d', [I]);
+    Result := Format('Itens: %d', [I]);
   end
   else if SameText(Column.FieldName, 'VLR_ITEM') then begin
     F      := Column.AuxValue;
-    Result := 'Valor Total: ' + FormatCurr('0,0.00 ', F) + FormatSettings.CurrencyString;
+    Result := 'Total: ' + FormatSettings.CurrencyString + FormatCurr(' 0,0.00 ', F);
   end;
 
   Column.AuxValue:=NULL;
+end;
+
+procedure TfrmItens.dbgrdItensDblClick(Sender: TObject);
+begin
+
+  frmHistorico.ShowModal();
+
 end;
 
 procedure TfrmItens.dbgrdItensFieldImage(const Column: TunimDBGridColumn;
@@ -109,14 +135,18 @@ procedure TfrmItens.dbgrdItensFieldImage(const Column: TunimDBGridColumn;
   var ATransparent: TUniTransparentOption);
 begin
 
- if SameText(AField.FieldName, 'EVT_LOJA') then begin
-   OutImage := TBitmap.Create;
+  OutImage             := TBitmap.Create;
+  OutImage.Transparent := True;
 
-   OutImage.LoadFromFile('E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\images\arrow-right.bmp');
-   OutImage.Transparent := True;
+  if  SameText(AField.FieldName, 'EVT_LOJA')                                    and
+     (UniMainModule.mtblItens.FieldByName('STATUS_ITEM').AsString = ST_ITEM_01) then
+    OutImage.LoadFromFile('E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\images\arrow-right.bmp')
+  else if SameText(AField.FieldName, 'EVT_HISTORICO') then
+    OutImage.LoadFromFile('E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\images\history.bmp');
+
+
 end;
 
-end;
 
 procedure TfrmItens.UnimFormBeforeShow(Sender: TObject);
 begin

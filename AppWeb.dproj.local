@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2020/06/01 11:17:28.000.894,C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\uLogin.pas=C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\Unit3.pas</Transaction>
-    <Transaction>2020/06/01 11:17:28.000.894,C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\uLogin.dfm=C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\Unit3.dfm</Transaction>
-    <Transaction>2020/06/05 09:31:03.000.247,C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\mdemo.dproj=C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\mdemo2.dproj</Transaction>
-    <Transaction>2020/06/09 08:39:17.000.300,C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\AppWeb.dproj=C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\mdemo2.dproj</Transaction>
-    <Transaction>2020/10/28 14:24:48.000.191,E:\Projetos\GerenciadorWebPedidos\uFrameForm.pas=E:\Projetos\GerenciadorWebPedidos\umfrmPedidos.pas</Transaction>
-    <Transaction>2020/10/28 14:24:48.000.191,E:\Projetos\GerenciadorWebPedidos\uFrameForm.dfm=E:\Projetos\GerenciadorWebPedidos\umfrmPedidos.dfm</Transaction>
-    <Transaction>2020/10/28 14:35:43.000.490,E:\Projetos\GerenciadorWebPedidos\umfrmPedidos.dfm=E:\Projetos\GerenciadorWebPedidos\uPedidos.dfm</Transaction>
-    <Transaction>2020/10/28 14:35:43.000.490,E:\Projetos\GerenciadorWebPedidos\umfrmPedidos.pas=E:\Projetos\GerenciadorWebPedidos\uPedidos.pas</Transaction>
-    <Transaction>2020/11/04 06:32:21.000.109,E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\uItens.dfm=E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\Unit3.dfm</Transaction>
+    <Transaction>2020/06/01 11:17:28.000.894,C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\Unit3.pas=C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\uLogin.pas</Transaction>
+    <Transaction>2020/06/01 11:17:28.000.894,C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\Unit3.dfm=C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\uLogin.dfm</Transaction>
+    <Transaction>2020/06/05 09:31:03.000.247,C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\mdemo2.dproj=C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\mdemo.dproj</Transaction>
+    <Transaction>2020/06/09 08:39:17.000.300,C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\mdemo2.dproj=C:\Users\383197\Desktop\WebBrowser_Hibrido\Touch\AllFeatures\AppWeb.dproj</Transaction>
+    <Transaction>2020/10/28 14:24:48.000.191,E:\Projetos\GerenciadorWebPedidos\umfrmPedidos.pas=E:\Projetos\GerenciadorWebPedidos\uFrameForm.pas</Transaction>
+    <Transaction>2020/10/28 14:24:48.000.191,E:\Projetos\GerenciadorWebPedidos\umfrmPedidos.dfm=E:\Projetos\GerenciadorWebPedidos\uFrameForm.dfm</Transaction>
+    <Transaction>2020/10/28 14:35:43.000.490,E:\Projetos\GerenciadorWebPedidos\uPedidos.dfm=E:\Projetos\GerenciadorWebPedidos\umfrmPedidos.dfm</Transaction>
+    <Transaction>2020/10/28 14:35:43.000.490,E:\Projetos\GerenciadorWebPedidos\uPedidos.pas=E:\Projetos\GerenciadorWebPedidos\umfrmPedidos.pas</Transaction>
+    <Transaction>2020/11/04 06:32:21.000.109,E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\Unit3.dfm=E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\uItens.dfm</Transaction>
+    <Transaction>2020/11/05 07:20:45.000.938,E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\uLojas.dfm=E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\Unit4.dfm</Transaction>
+    <Transaction>2020/11/05 08:20:30.000.954,E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\uHistorico.dfm=E:\GerenciadorWebPedidos\ConsultasWeb.git\trunk\Unit4.dfm</Transaction>
   </Transactions>
 </BorlandProject>

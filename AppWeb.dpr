@@ -117,7 +117,9 @@ uses
   UniModalQtdItens in 'units\FormsFormTypes\UniModalQtdItens.pas' {UFRMniModalQtdItens: TUnimForm},
   uRecontagemDeItem in 'units\FormsFormTypes\uRecontagemDeItem.pas' {frmRecontagemDeItem: TUnimForm},
   uFaltaDeItem in 'units\FormsFormTypes\uFaltaDeItem.pas' {frmFaltaDeItem: TUnimForm},
-  uSobraDeItem in 'units\FormsFormTypes\uSobraDeItem.pas' {frmSobraDeItem: TUnimForm};
+  uSobraDeItem in 'units\FormsFormTypes\uSobraDeItem.pas' {frmSobraDeItem: TUnimForm},
+  uLojas in 'uLojas.pas' {frmLojas: TUnimForm},
+  uHistorico in 'uHistorico.pas' {frmHistorico: TUnimForm};
 
 {$R *.res}
 

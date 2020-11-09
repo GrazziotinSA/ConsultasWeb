@@ -47,7 +47,7 @@ end;
 procedure TfrmPedidos.UnimDBListGrid1Click(Sender: TObject);
 begin
 
-  UniMainModule.mtblPedidos.SaveToFile('db');
+  UniMainModule.mtblPedidos.SaveToFile('db-pedidos');
   frmItens.ShowModal();
 
 end;
